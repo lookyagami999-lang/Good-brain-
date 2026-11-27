@@ -1,0 +1,106 @@
+<!-- ===== หน้ากิจกรรม ===== -->
+     <div id="calendar" class="page">
+       <div class="card">
+         <h2>📅 ปฏิทินกิจกรรม — เทศบาลตำบลม่วงน้อย</h2>
+         <p style="font-size:13px; color:#666; margin-bottom:16px;">อ.ป่าซาง จ.ลำพูน</p>
+         
+         <!-- ปุ่มเลือกหมวดหมู่ -->
+         <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px;">
+           <button onclick="showAct('all')" id="btn-all" style="padding:8px 12px; background:#0066CC; color:white; border:none; border-radius:6px; font-size:13px; cursor:pointer; font-weight:500;">ทั้งหมด</button>
+           <button onclick="showAct('service')" id="btn-service" style="padding:8px 12px; background:#E6F3FF; color:#0066CC; border:none; border-radius:6px; font-size:13px; cursor:pointer;">🏛️ บริการประชาชน</button>
+           <button onclick="showAct('health')" id="btn-health" style="padding:8px 12px; background:#E8FBF2; color:#008856; border:none; border-radius:6px; font-size:13px; cursor:pointer;">💚 สาธารณสุข</button>
+           <button onclick="showAct('development')" id="btn-development" style="padding:8px 12px; background:#FFF4E5; color:#CC6600; border:none; border-radius:6px; font-size:13px; cursor:pointer;">🔨 พัฒนาตำบล</button>
+           <button onclick="showAct('community')" id="btn-community" style="padding:8px 12px; background:#F3E8FF; color:#7B2CBF; border:none; border-radius:6px; font-size:13px; cursor:pointer;">🤝 ชุมชน</button>
+           <button onclick="showAct('announce')" id="btn-announce" style="padding:8px 12px; background:#F0F0F0; color:#444444; border:none; border-radius:6px; font-size:13px; cursor:pointer;">📢 ประกาศ</button>
+         </div>
+         <!-- รายการกิจกรรม -->
+         <div id="activity-list">
+           
+           <!-- บริการประชาชน -->
+           <div class="act-item service" style="border-left:3px solid #0066CC; padding:12px 14px; margin-bottom:10px; background:#F0F7FF; border-radius:8px;">
+             <strong>📋 เวลาทำการ เทศบาลตำบลม่วงน้อย</strong>
+             <p style="font-size:14px; color:#555; margin-top:6px;">วันจันทร์–ศุกร์ เวลา 08:30–16:30 น.<br>พักเที่ยง 12:00–13:00 น. วันเสาร์–อาทิตย์ และวันหยุดนักขัตฤกษ์ ปิดทำการ</p>
+           </div>
+           
+           <div class="act-item service" style="border-left:3px solid #0066CC; padding:12px 14px; margin-bottom:10px; background:#F0F7FF; border-radius:8px;">
+             <strong>📝 ทุกวันจันทร์ — วันรับฟังความคิดเห็นประชาชน</strong>
+             <p style="font-size:14px; color:#555; margin-top:6px;">ผู้บริหารและพนักงานเทศบาล พร้อมรับฟังปัญหา ณ ที่ทำการเทศบาลตำบลม่วงน้อย</p>
+           </div>
+           
+           <div class="act-item service" style="border-left:3px solid #0066CC; padding:12px 14px; margin-bottom:10px; background:#F0F7FF; border-radius:8px;">
+             <strong>🪪 วันที่ 1–15 ของเดือน — บริการลงทะเบียนและเอกสารต่างๆ</strong>
+             <p style="font-size:14px; color:#555; margin-top:6px;">ทำบัตรประชาชน ทะเบียนราษฎร์ และเอกสารราชการ ณ จุดบริการเทศบาล</p>
+           </div>
+           <!-- สาธารณสุข -->
+           <div class="act-item health" style="border-left:3px solid #008856; padding:12px 14px; margin-bottom:10px; background:#F0F9F4; border-radius:8px;">
+             <strong>🚑 ทุกวันอังคาร — ออกหน่วยบริการสาธารณสุขเคลื่อนที่</strong>
+             <p style="font-size:14px; color:#555; margin-top:6px;">ลงพื้นที่หมู่บ้านในตำบลม่วงน้อย ตรวจสุขภาพ ให้คำปรึกษาและยาพื้นฐาน</p>
+           </div>
+           
+           <div class="act-item health" style="border-left:3px solid #008856; padding:12px 14px; margin-bottom:10px; background:#F0F9F4; border-radius:8px;">
+             <strong>🦟 ทุกเดือน — กำจัดยุงลาย ป้องกันไข้เลือดออก</strong>
+             <p style="font-size:14px; color:#555; margin-top:6px;">เจ้าหน้าที่ลงพื้นที่พ่นยา ล้างแหล่งเพาะพันธุ์ยุง และแจกคู่มือความรู้</p>
+           </div>
+           
+           <div class="act-item health" style="border-left:3px solid #008856; padding:12px 14px; margin-bottom:10px; background:#F0F9F4; border-radius:8px;">
+             <strong>🧹 ทุกไตรมาส — รณรงค์ชุมชนสะอาด ม่วงน้อย น่าอยู่</strong>
+             <p style="font-size:14px; color:#555; margin-top:6px;">ร่วมกันทำความสะอาดถนน ซอย และพื้นที่สาธารณะในตำบลม่วงน้อย</p>
+           </div>
+           <!-- พัฒนาตำบล -->
+           <div class="act-item development" style="border-left:3px solid #CC6600; padding:12px 14px; margin-bottom:10px; background:#FFF8F0; border-radius:8px;">
+             <strong>🚧 ทุกเดือน — ตรวจซ่อมถนนและไฟสาธารณะ</strong>
+             <p style="font-size:14px; color:#555; margin-top:6px;">สำรวจจุดชำรุด ซ่อมแซมถนน ไฟส่องสว่าง และไฟจราจรในตำบลม่วงน้อย</p>
+           </div>
+           
+           <div class="act-item development" style="border-left:3px solid #CC6600; padding:12px 14px; margin-bottom:10px; background:#FFF8F0; border-radius:8px;">
+             <strong>💧 ทุกวันพุธ — ดูแลระบบประปาและท่อระบายน้ำ</strong>
+             <p style="font-size:14px; color:#555; margin-top:6px;">ตรวจสอบคุณภาพน้ำ ล้างท่อระบายน้ำ ป้องกันน้ำท่วมและน้ำเน่าเสีย</p>
+           </div>
+           
+           <div class="act-item development" style="border-left:3px solid #CC6600; padding:12px 14px; margin-bottom:10px; background:#FFF8F0; border-radius:8px;">
+             <strong>♻️ ทุกวันพฤหัสบดี — เก็บขยะและขยะอันตราย</strong>
+             <p style="font-size:14px; color:#555; margin-top:6px;">รับเก็บขยะทั่วไป ขยะรีไซเคิล และขยะอันตราย แยกทิ้งถูกวิธี</p>
+           </div>
+           <!-- กิจกรรมชุมชน -->
+           <div class="act-item community" style="border-left:3px solid #7B2CBF; padding:12px 14px; margin-bottom:10px; background:#F9F4FF; border-radius:8px;">
+             <strong>🏠 วันที่ 15 มีนาคม — ประชุมประชาคมตำบลม่วงน้อย</strong>
+             <p style="font-size:14px; color:#555; margin-top:6px;">รับฟังความคิดเห็น วางแผนพัฒนา และแก้ไขปัญหาร่วมกันระหว่างชุมชนและเทศบาล</p>
+           </div>
+           
+           <div class="act-item community" style="border-left:3px solid #7B2CBF; padding:12px 14px; margin-bottom:10px; background:#F9F4FF; border-radius:8px;">
+             <strong>🎊 วันที่ 12 สิงหาคม — วันแม่แห่งชาติ</strong>
+             <p style="font-size:14px; color:#555; margin-top:6px;">จัดกิจกรรมเทิดพระเกียรติและมอบเกียรติคุณแก่แม่ดีเด่นตำบลม่วงน้อย</p>
+           </div>
+           
+           <div class="act-item community" style="border-left:3px solid #7B2CBF; padding:12px 14px; margin-bottom:10px; background:#F9F4FF; border-radius:8px;">
+             <strong>🎆 วันที่ 5 ธันวาคม — วันพ่อแห่งชาติ และวันชาติ</strong>
+             <p style="font-size:14px; color:#555; margin-top:6px;">จัดกิจกรรมบำเพ็ญประโยชน์และสามัคคีในชุมชน</p>
+           </div>
+           
+           <div class="act-item community" style="border-left:3px solid #7B2CBF; padding:12px 14px; margin-bottom:10px; background:#F9F4FF; border-radius:8px;">
+             <strong>🎡 ประเพณีเดือนสิบสอง — งานลอยกระทง</strong>
+             <p style="font-size:14px; color:#555; margin-top:6px;">จัดงานวัฒนธรรม ประเพณีล้านนา ร่วมกันรักษาวัฒนธรรมท้องถิ่น</p>
+           </div>
+           
+           <div class="act-item community" style="border-left:3px solid #7B2CBF; padding:12px 14px; margin-bottom:10px; background:#F9F4FF; border-radius:8px;">
+             <strong>🌾 กิจกรรมส่งเสริมอาชีพและสินค้าชุมชน</strong>
+             <p style="font-size:14px; color:#555; margin-top:6px;">ส่งเสริมผลิตภัณฑ์ชุมชนและภูมิปัญญาท้องถิ่นตำบลม่วงน้อย</p>
+           </div>
+           <!-- ประกาศสำคัญ -->
+           <div class="act-item announce" style="border-left:3px solid #666666; padding:12px 14px; margin-bottom:10px; background:#F8F8F8; border-radius:8px;">
+             <strong>📢 ประกาศวันหยุดนักขัตฤกษ์</strong>
+             <p style="font-size:14px; color:#555; margin-top:6px;">ติดตามประกาศล่วงหน้า ทางบอร์ดประชาสัมพันธ์และเว็บไซต์ของเทศบาลตำบลม่วงน้อย</p>
+           </div>
+           
+           <div class="act-item announce" style="border-left:3px solid #666666; padding:12px 14px; margin-bottom:10px; background:#F8F8F8; border-radius:8px;">
+             <strong>📋 ประกาศจัดซื้อจัดจ้างและแผนงาน</strong>
+             <p style="font-size:14px; color:#555; margin-top:6px;">ตรวจสอบประกาศได้ที่ บอร์ดหน้าที่ทำการเทศบาลตำบลม่วงน้อย</p>
+           </div>
+           
+           <div class="act-item announce" style="border-left:3px solid #666666; padding:12px 14px; background:#F8F8F8; border-radius:8px;">
+             <strong>📞 ติดต่อ เทศบาลตำบลม่วงน้อย</strong>
+             <p style="font-size:14px; color:#555; margin-top:6px;">ที่อยู่: ต.ม่วงน้อย อ.ป่าซาง จ.ลำพูน 51120<br>โทร: 053-511234</p>
+           </div>
+         </div>
+       </div>
+     </div>
